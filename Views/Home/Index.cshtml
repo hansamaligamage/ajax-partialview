@@ -1,0 +1,34 @@
+﻿@using ajaxPartial.Models;
+
+@model List<Student>
+
+<h1>Search Students</h1>
+<br />
+
+<form>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="Student">Student</label>
+            <input type="text" id="student" placeholder="Student" class="form-control">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="Course">Course</label>
+            <select class="form-control" id="course">
+                <option value="0">All</option>
+                <option value="1">Computer Architecture</option>
+                <option value="2">Database Systems</option>
+                <option value="3">Data Structure and Algorithms</option>
+                <option value="4">Software Engineering</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-12">
+            <input id="btnSearch" type="button" class="btn btn-primary" value="Search" />
+        </div>
+    </div>
+</form>
+
+<div id="students"> </div>
+
+<script src="~/js/index.js"></script>
