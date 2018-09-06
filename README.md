@@ -8,8 +8,8 @@ Home Controller Action method when page loads
 ```
  public IActionResult Index() 
   { 
-      List<Student> students = Student.GetStudents(new StudentFilter()); 
-      return View(students); 
+      //List<Student> students = Student.GetStudents(new StudentFilter()); 
+      return View(); 
    }
  ```
  
