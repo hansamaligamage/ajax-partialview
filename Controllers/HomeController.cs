@@ -8,8 +8,8 @@ namespace ajaxPartial.Controllers
     {
         public IActionResult Index()
         {
-            List<Student> students = Student.GetStudents(new StudentFilter());
-            return View(students);
+            //List<Student> students = Student.GetStudents(new StudentFilter());
+            return View();
         }
 
         [HttpPost]
